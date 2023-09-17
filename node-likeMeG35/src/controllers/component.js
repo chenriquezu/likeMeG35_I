@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config();
 //Configuramos el entorno de conexion al servidor postgress
 const conexion = new Pool({
     user: process.env.DBP_USER,
-    host: process.env.DB_SERVER,
+    host: process.env.DBP_SERVER,
     database: process.env.DBP_DATABASE,
     password: process.env.DBP_PASSWORD,
     port: process.env.DBP_PORT,
